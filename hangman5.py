@@ -20,6 +20,7 @@ class Hangman():
     def sports(self):
         
         difficulty = int(input('Please enter what difficulty leve you would like to play at. 1 - Easy. 2 - Medium. 3 - Hard.'))
+        
         if difficulty == 1:
             hangman.lives = 7
         elif difficulty == 2:
@@ -30,10 +31,12 @@ class Hangman():
             difficulty = int(input('Not a valid number. Please enter what difficulty leve you would like to play at. 1 - Easy. 2 - Medium. 3 - Hard.'))
         
         sports_list = ['Bruins', 'Patriots', 'Yankees', 'Devils', 'Magic', 'Celtics', 'Chiefs', 'Rangers', 'Coyotes', 'Diamondbacks']
+        
         hangman_ans_og = random.choice(sports_list)
         hangman_ans = hangman_ans_og.lower()
         hangman_ans = list(hangman_ans)
         hangman_hidden = " _ "*len(hangman_ans)
+        
         hangman.guess_list = []
         hangman.correct_list = []
 
@@ -73,6 +76,7 @@ class Hangman():
         
     def countries(self):
         difficulty = int(input('Please enter what difficulty leve you would like to play at. 1 - Easy. 2 - Medium. 3 - Hard.'))
+        
         if difficulty == 1:
             hangman.lives = 7
         elif difficulty == 2:
@@ -83,10 +87,12 @@ class Hangman():
             difficulty = int(input('Not a valid number. Please enter what difficulty leve you would like to play at. 1 - Easy. 2 - Medium. 3 - Hard.'))
         
         countries_list = ['Russia', 'Australia', 'Italy', 'Greece', 'Canada', 'Liechenstein', 'Austria', 'Norway', 'Finland', 'Mongolia']
+        
         hangman_ans_og = random.choice(countries_list)
         hangman_ans = hangman_ans_og.lower()
         hangman_ans = list(hangman_ans)
         hangman_hidden = " _ "*len(hangman_ans)
+        
         hangman.guess_list = []
         hangman.correct_list = []
         
@@ -126,7 +132,9 @@ class Hangman():
         
         
     def towns(self):
+        
         difficulty = int(input('Please enter what difficulty leve you would like to play at. 1 - Easy. 2 - Medium. 3 - Hard.'))
+        
         if difficulty == 1:
             hangman.lives = 7
         elif difficulty == 2:
@@ -137,10 +145,12 @@ class Hangman():
             difficulty = int(input('Not a valid number. Please enter what difficulty leve you would like to play at. 1 - Easy. 2 - Medium. 3 - Hard.'))
         
         towns_list = ['Attleboro', 'Milford', 'Reading', 'Somerville', 'Lowell', 'Haverhill', 'Methuen', 'Peabody', 'Belchertown', 'Amherst']
+        
         hangman_ans_og = random.choice(towns_list)
         hangman_ans = hangman_ans_og.lower()
         hangman_ans = list(hangman_ans)
         hangman_hidden = " _ "*len(hangman_ans)
+        
         hangman.guess_list = []
         hangman.correct_list = []
         
